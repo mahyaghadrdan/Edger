@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7dc2d8de6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://static.neshan.org/sdk/openlayers/5.3.0/ol.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+    <script type="text/javascript" src="https://static.neshan.org/sdk/openlayers/5.3.0/ol.js"></script>
+    <title>EdgeLedger Index</title>
+</head>
+<body>
+    <header>
+    <nav id="navbar">
+        <h1 class="logo"><span class="primary-text"><i class="fas fa-book-open"></i>Edge</span>Ledger</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what">What</a></li>
+            <li><a href="#who">Who</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>  
+    </nav>
+    <div id="showcase">
+        <div class="showcase-content">
+            <h1 class="l-heading text-center">The Sky Is The Limit</h1>
+            <p class="lead text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum explicabo omnis sint a rem doloribus.</p>
+            <a class="btn" href="./index.html">Read More</a> 
+        </div>
+    </div>
+</header>
+<section id="what" class="bg-light">
+    <div class="container">
+        <h1 class="m-heading py-1 text-center"><span class="primary-text">What</span> We Do</h1>
+        <div class="items text-center">
+            <div class="item"><i class="fas fa-university fa-2x"></i>
+              <h2 class="py-1">Investment Banking</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, magni?</p>
+            </div>
+         <div class="item"><i class="fas fa-book-reader fa-2x"></i>
+          <h2 class="py-1">Portfolio Management</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, magni?</p>
+         </div>
+         <div class="item"><i class="fas fa-pencil-alt fa-2x"></i>
+          <h2 class="py-1">Tax & Custodial</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, magni?</p>
+         </div>
+        </div>
+    </div>
+</section>
+<section id="who">
+        <div class="left-section"></div>
+        <div class="right-section bg-dark p-2">
+            <h3 class="m-heading"><span class="primary-text">Who</span>We Are</h3>
+            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus illo sunt. Perspiciatis doloremque accusantium deleniti. Omnis rem porro maxime iste? Consectetur quo officia incidunt. Error accusamus corporis omnis totam!</p>
+             <h3>Our Team</h3>
+             <ul class="list">
+                 <li>Mark Smith: CEO</li>
+                 <li>Shannon Johnson: CEO</li>
+                 <li>John Corbit: Lead Accountant</li>
+                 <li>Janet Williams: Investment Manager</li>
+                 <li>Kara jackson: Senior Accountant</li>
+             </ul>
+        </div>
+</section>
+<section id="clients" class="bg-light">
+    <div class="container">
+    <h1 class="m-heading py-1 text-center"><span class="primary-text">Our</span>Clients</h1>
+    <div class="logo">
+        <div><img src="./img/logo1.png" alt="logo-1"></div>
+        <div><img src="./img/logo2.png" alt="logo-2"></div>
+        <div><img src="./img/logo3.png" alt="logo-3"></div>
+        <div><img src="./img/logo4.png" alt="logo-4"></div>
+        <div><img src="./img/logo5.png" alt="logo-5"></div>
+    </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="contact-us p-1">
+        <h3 class="m-heading">Contact Us</h3>
+        <p class="lead">Please use the form below to contact us.</p>
+        <form>
+        <div class="form">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name">
+            </div>
+            <div class="form">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+        </div>
+        <div class="form">
+            <label for="phone number">Phone Number</label>
+            <input type="number" name="phone number" id="phone number" placeholder="Enter Phone Number">
+        </div>
+        <div class="form">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+        </div>
+        <input type="submit" value="Send" class="btn btn-dark">
+    </form>
+    </div>
+    <div id="map" style="width: 50%; height: 570px; background: #eee; border: 2px solid #aaa;"></div>
+    <script type="text/javascript">
+        var myMap = new ol.Map({
+            target: 'map',
+            key: 'web.Uspu0biZUTYPQzvXxiyIoPewUYMU0Ra3pxHEB0wS',
+            maptype: 'dreamy',
+            poi: true,
+            traffic: false,
+            view: new ol.View({
+                center: ol.proj.fromLonLat([51.338076, 35.699756]),
+                zoom: 14
+            })
+        });
+    </script>
+</section>
+<footer id="main-footer" class="bg-dark p-1 text-center ">
+    <p>Copyright &copy; 2022, EdgeLedger, All Rights Reserved</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
